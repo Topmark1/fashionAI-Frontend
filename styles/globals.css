@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+      @apply scroll-smooth;
+    }
+  }
+@layer components {
+.infoText {
+ @apply text-xs sm:text-sm p-2 sm:p-4 bg-gray-700/50 rounded-lg max-w-[300px];
+}}
+
+@font-face{
+  font-family: 'mont';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'mont-bold';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+.font-M{
+  font-family: 'mont';
+}
+.font-Mb{
+  font-family: 'mont-bold';
+}
+
