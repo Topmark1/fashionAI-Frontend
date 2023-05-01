@@ -4,9 +4,9 @@ import Link from "next/link"
 function HomePage() {
     
   return (
-    <div className="flex">
+    <div className="sm:flex pt-[72px] sm:pt-20">
         {/* Form Section */}
-        <div className="w-2/5 border-t-2 border-gray-300
+        <div className="sm:w-1/2 md:w-2/5 border-t-2 border-gray-300
         p-2 sm:p-4 lg:p-6 lg:pr-[75px]">
           <div className="flex">
             <Link href="/newpage" className="">
@@ -15,7 +15,7 @@ function HomePage() {
             <p className="text-[16px] font-bold pl-2">Back To Home</p>
             </Link>
           </div>
-          <h2 className="text-[38px] font-bold mt-6 mb-4">Create your account</h2>
+          <h2 className="text-[28px] sm:text-[38px] font-bold mt-4 sm:mt-6 mb-3 sm:mb-4">Create your account</h2>
 
           <form>
                 <div><label htmlFor='YourName' className='text-[14px] font-semibold '>Your Name </label> <br />
@@ -31,13 +31,13 @@ function HomePage() {
                 <button type='submit' className='bg-[#666666] rounded-lg text-[16px] font-bold text-white mt-4 px-4 py-2' id='btn__submit'>Create Account</button>
                 </div>
           </form>
-          <p className="text-[16px] font-normal text-center mt-10">Already have an account? <span className="text-blue-500 font-bold"><Link href="/newpage">
+          <p className="text-[16px] font-normal text-center mt-5 sm:mt-10">Already have an account? <span className="text-blue-500 font-bold"><Link href="/newpage">
              Login
             </Link></span></p>
         </div>
 
         {/* Image */}
-        <div className="w-3/5">
+        <div className="sm:w-1/2 md:w-3/5">
             <div className="relative">
               <div className="absolute inset-0 w-full h-full bg-white bg-opacity-50 flex flex-col items-center justify-center "  id="fashionSign"> 
                 <img src="/images/FA.svg" />
