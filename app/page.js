@@ -18,20 +18,20 @@ function HomePage() {
           <h2 className="text-[28px] sm:text-[38px] font-bold mt-4 sm:mt-6 mb-3 sm:mb-4">Create your account</h2>
 
           <form>
-                <div><label htmlFor='YourName' className='text-[14px] font-semibold '>Your Name </label> <br />
-                <input type='text'  name='YourName' className='py-2 pl-4 text-[16px] font-normal bg-gray-200 rounded-lg w-full mt-1' id='first_name' placeholder='Enter full name'/></div>
+                <label htmlFor='YourName' className='text-[14px] font-semibold '>Your name </label> <br />
+                <input type='text'  name='YourName' className='py-2 pl-4 text-[16px] font-normal bg-gray-200 rounded-lg w-full mt-1 mb-4' id='name' placeholder='Enter full name'/>
               
-                <div className="mt-4"><label htmlFor='YourName' className='text-[14px] font-semibold '>Your Name </label> <br />
-                <input type='text'  name='YourName' className='py-2 pl-4 mt-1 text-[16px] font-normal bg-gray-200 rounded-lg w-full' id='first_name' placeholder='Enter full name'/></div>
+                <label htmlFor='YourEmail' className='text-[14px] font-semibold '>Your email </label> <br />
+                <input type='text'  name='YourEmail' className='py-2 pl-4 mt-1 mb-4 text-[16px] font-normal bg-gray-200 rounded-lg w-full ' id='email' placeholder='Enter email address'/>
 
-                <div className="mt-4"><label htmlFor='YourName' className='text-[14px] font-semibold '>Your Name </label> <br />
-                <input type='text'  name='YourName' className='py-2 pl-4 mt-1 text-[16px] font-normal bg-gray-200 rounded-lg w-full' id='first_name' placeholder='Enter full name'/></div>
+                <label htmlFor='Yourpassword' className='text-[14px] font-semibold '>Your password </label> <br />
+                <input type='text'  name='YourPassword' className='py-2 pl-4 mt-1 text-[16px] font-normal bg-gray-200 rounded-lg w-full' id='password' placeholder='Enter your password'/>
                 
                 <div className="flex justify-end">
                 <button type='submit' className='bg-[#666666] rounded-lg text-[16px] font-bold text-white mt-4 px-4 py-2' id='btn__submit'>Create Account</button>
                 </div>
           </form>
-          <p className="text-[16px] font-normal text-center mt-5 sm:mt-10">Already have an account? <span className="text-blue-500 font-bold"><Link href="/newpage">
+          <p className="text-[16px] font-normal text-center mt-5 sm:mt-10 mb-5">Already have an account? <span className="text-blue-500 font-bold"><Link href="/newpage">
              Login
             </Link></span></p>
         </div>
